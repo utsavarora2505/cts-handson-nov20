@@ -21,10 +21,10 @@ public class Oauth2Configuration extends AuthorizationServerConfigurerAdapter{
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory()
 		.withClient("client1")
-		.secret("{noop}manish")
+		.secret("{noop}utsav")
 		.authorizedGrantTypes("password")
 		.scopes("WebClient","MobileClient","DesktopApplication")
-		.redirectUris("/userLogin");
+		.redirectUris("/user");
 	}
 
 	@Override
